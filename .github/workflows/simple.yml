@@ -1,13 +1,13 @@
 name: Shell Command
 on: [push]
 
-jobs: 
+jobs:
   run-shell-command:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
       - name: echo string
-        run:   each "Hello World"
+        run: each "Hello World"
       - name: multline script
-       run: | 
-        node -v 
-        npm -v
+        run: |
+          node -v 
+          npm -v
